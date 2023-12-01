@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<string.h>
+int main() 
+{
+	char  n1[100],n2[100],n3[100];
+	printf("enter number of characters in a1:");
+	scanf("%s",&n1);
+	printf("enter number of characters in a2:");
+	scanf("%s",&n2);
+	printf("enter number of characters in a3:");
+	scanf("%s",&n3);
+	printf("expression is %s\n", n1);
+	printf("expression is %s\n", n2);
+	printf("expression is %s\n", n3);
+	if ( n1 == n2 )
+	{
+		printf("%s",n1);
+		printf("%s",n2);
+		printf("%s %s",n1,n3);
+	}
+	else if  (n1 == n3)
+	{
+		printf("%s %s",n1,n2);
+	}
+	else 
+	{
+		printf("no common subexpression");
+	}
+return 0;	
+}
